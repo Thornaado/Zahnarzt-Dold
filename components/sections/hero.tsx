@@ -20,11 +20,10 @@ export function Hero() {
           {/* Text content */}
           <div
             ref={textRef}
-            className={`flex flex-col gap-6 transition-all duration-700 ease-out ${
-              textVisible
+            className={`flex flex-col gap-6 transition-all duration-700 ease-out ${textVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-6 opacity-0"
-            }`}
+              }`}
           >
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl text-balance">
               {"Moderne Zahnmedizin in Rheinfelden. Pr\u00E4zision, der Sie vertrauen."}
@@ -48,21 +47,11 @@ export function Hero() {
           {/* Hero image */}
           <div
             ref={imageRef}
-            className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 ${
-              imageVisible
+            className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 ${imageVisible
                 ? "scale-100 opacity-100"
                 : "scale-95 opacity-0"
-            }`}
+              }`}
           >
-            <Image
-              src="/images/hero-dental.jpg"
-              alt="Moderne Zahnarztpraxis Dold in Rheinfelden - helle und einladende Behandlungsraeume"
-              width={800}
-              height={600}
-              className="h-auto w-full object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              priority
-            />
           </div>
         </div>
       </div>
