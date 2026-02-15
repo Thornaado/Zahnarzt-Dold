@@ -112,6 +112,8 @@ export function PatientInfoModal({ trigger }: PatientInfoModalProps) {
                                                         {item.hasLink && (
                                                             <a
                                                                 href={item.linkUrl}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
                                                                 className="ml-2 inline-flex items-center font-semibold text-accent hover:underline"
                                                             >
                                                                 <span>{item.linkText}</span>
