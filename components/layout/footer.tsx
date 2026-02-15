@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { PatientInfoModal } from "@/components/modals/patient-info-modal"
+import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
@@ -7,7 +9,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Kontakt */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <h3 className="text-lg font-semibold text-primary-foreground">Kontakt</h3>
             <ul className="flex flex-col gap-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
@@ -23,12 +25,23 @@ export function Footer() {
                 <span>info@zahnarzt-dold.de</span>
               </li>
             </ul>
+            <PatientInfoModal
+              trigger={
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-fit border-primary-foreground/20 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  Neu hier? Ihr erster Besuch
+                </Button>
+              }
+            />
           </div>
 
           {/* Oeffnungszeiten */}
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-semibold text-primary-foreground">
-{"\u00D6ffnungszeiten"}
+              {"\u00D6ffnungszeiten"}
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-primary-foreground/80">
               <li className="flex items-center gap-2">

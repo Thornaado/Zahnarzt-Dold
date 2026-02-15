@@ -4,6 +4,7 @@ import Image from "next/image"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { useAnimateIn } from "@/hooks/use-animate-in"
+import { PatientInfoModal } from "@/components/modals/patient-info-modal"
 
 export function Hero() {
   const { ref: textRef, isVisible: textVisible } = useAnimateIn({ threshold: 0.2 })
@@ -33,7 +34,7 @@ export function Hero() {
               {"Spezialisierte Fachkompetenz in Endodontie und Parodontologie. Wir kombinieren modernste Technik mit einf\u00FChlsamer Behandlung."}
             </p>
 
-            <div>
+            <div className="flex flex-wrap gap-4">
               <Button
                 onClick={handleCTA}
                 size="lg"
@@ -41,6 +42,17 @@ export function Hero() {
               >
                 {"Jetzt Termin w\u00E4hlen"}
               </Button>
+              <PatientInfoModal
+                trigger={
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="rounded-lg border-accent text-accent hover:bg-accent/10 text-sm font-semibold"
+                  >
+                    Neu hier? Ihr erster Besuch
+                  </Button>
+                }
+              />
             </div>
           </div>
 
