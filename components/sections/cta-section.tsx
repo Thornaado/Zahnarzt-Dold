@@ -1,15 +1,11 @@
 "use client"
 
-import { toast } from "sonner"
+import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useAnimateIn } from "@/hooks/use-animate-in"
 
 export function CTASection() {
   const { ref, isVisible } = useAnimateIn()
-
-  const handleCTA = () => {
-    toast.success("Erfolg! Terminbuchung wird geladen...")
-  }
 
   return (
     <section id="kontakt" className="bg-primary py-16 lg:py-24">
@@ -28,11 +24,14 @@ export function CTASection() {
             {"W\u00E4hlen Sie jetzt Ihren Wunschtermin bequem online aus."}
           </p>
           <Button
-            onClick={handleCTA}
+            asChild
             size="lg"
             className="mt-4 rounded-lg bg-background text-foreground hover:bg-background/90 font-semibold"
           >
-            Termin online buchen
+            <a href="tel:+49762362484">
+              <Phone className="mr-2 h-4 w-4" />
+              Termin vereinbaren
+            </a>
           </Button>
         </div>
       </div>

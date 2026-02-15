@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { toast } from "sonner"
+import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useAnimateIn } from "@/hooks/use-animate-in"
 import { PatientInfoModal } from "@/components/modals/patient-info-modal"
@@ -9,10 +9,6 @@ import { PatientInfoModal } from "@/components/modals/patient-info-modal"
 export function Hero() {
   const { ref: textRef, isVisible: textVisible } = useAnimateIn({ threshold: 0.2 })
   const { ref: imageRef, isVisible: imageVisible } = useAnimateIn({ threshold: 0.2 })
-
-  const handleCTA = () => {
-    toast.success("Erfolg! Terminbuchung wird geladen...")
-  }
 
   return (
     <section className="bg-background py-16 lg:py-24">
@@ -36,11 +32,14 @@ export function Hero() {
 
             <div className="flex flex-wrap gap-4">
               <Button
-                onClick={handleCTA}
+                asChild
                 size="lg"
                 className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg font-semibold"
               >
-                {"Jetzt Termin w\u00E4hlen"}
+                <a href="tel:+49762362484">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Termin vereinbaren
+                </a>
               </Button>
               <PatientInfoModal
                 trigger={

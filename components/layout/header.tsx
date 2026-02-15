@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { toast } from "sonner"
+import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/layout/mobile-nav"
 
@@ -25,10 +25,6 @@ export function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
-  const handleCTA = () => {
-    toast.success("Erfolg! Terminbuchung wird geladen...")
-  }
 
   return (
     <header
@@ -57,11 +53,14 @@ export function Header() {
             </a>
           ))}
           <Button
-            onClick={handleCTA}
+            asChild
             className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg"
             size="sm"
           >
-            Termin online buchen
+            <a href="tel:+49762362484">
+              <Phone className="mr-2 h-4 w-4" />
+              Termin vereinbaren
+            </a>
           </Button>
         </nav>
 

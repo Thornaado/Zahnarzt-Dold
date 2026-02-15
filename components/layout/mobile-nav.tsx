@@ -1,8 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu } from "lucide-react"
-import { toast } from "sonner"
+import { Menu, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
@@ -29,11 +28,6 @@ export function MobileNav() {
       const target = document.querySelector(href)
       target?.scrollIntoView({ behavior: "smooth" })
     }, 300)
-  }
-
-  const handleCTA = () => {
-    setOpen(false)
-    toast.success("Erfolg! Terminbuchung wird geladen...")
   }
 
   return (
@@ -66,10 +60,13 @@ export function MobileNav() {
             </button>
           ))}
           <Button
-            onClick={handleCTA}
+            asChild
             className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg mt-4"
           >
-            Termin online buchen
+            <a href="tel:+49762362484">
+              <Phone className="mr-2 h-4 w-4" />
+              Termin vereinbaren
+            </a>
           </Button>
         </nav>
       </SheetContent>
