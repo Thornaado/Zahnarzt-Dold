@@ -38,7 +38,7 @@ export function Philosophy() {
                         <div className="relative overflow-hidden rounded-2xl shadow-xl transition-transform duration-500 hover:scale-105">
                             <Image
                                 src="/team.png"
-                                alt="Unser Team"
+                                alt="Das Team der Zahnarztpraxis Dold in Rheinfelden (Baden)"
                                 width={800}
                                 height={1000}
                                 className="w-full h-auto object-cover"

@@ -14,11 +14,11 @@ export function Footer() {
             <ul className="flex flex-col gap-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>Kirchplatz 2, 79618 Rheinfelden</span>
+                <span>Friedrichstr. 23, 79618 Rheinfelden</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+49 (0) 7623 1234</span>
+                <span>07623 62484</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
@@ -44,13 +44,12 @@ export function Footer() {
               {"\u00D6ffnungszeiten"}
             </h3>
             <ul className="flex flex-col gap-3 text-sm text-primary-foreground/80">
-              <li className="flex items-center gap-2">
-                <Clock className="h-4 w-4 shrink-0" />
-                <span>{"Mo\u2013Do: 08:00 \u2013 18:00"}</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Clock className="h-4 w-4 shrink-0" />
-                <span>{"Fr: 08:00 \u2013 14:00"}</span>
+              <li className="flex items-start gap-2">
+                <Clock className="h-4 w-4 shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <span>Mo. bis Fr. 8:30 – 11:00 Uhr</span>
+                  <span>Mo. bis Do. 14:00 – 16:00 Uhr</span>
+                </div>
               </li>
             </ul>
           </div>
