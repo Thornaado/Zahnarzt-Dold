@@ -21,8 +21,8 @@ export function Hero() {
           <div
             ref={textRef}
             className={`flex flex-col gap-6 transition-all duration-700 ease-out ${textVisible
-                ? "translate-y-0 opacity-100"
-                : "translate-y-6 opacity-0"
+              ? "translate-y-0 opacity-100"
+              : "translate-y-6 opacity-0"
               }`}
           >
             <h1 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl text-balance">
@@ -48,11 +48,17 @@ export function Hero() {
           <div
             ref={imageRef}
             className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 ${imageVisible
-                ? "scale-100 opacity-100"
-                : "scale-95 opacity-0"
+              ? "scale-100 opacity-100"
+              : "scale-95 opacity-0"
               }`}
           >
-          </div>
+            <Image
+              src="/hero image.png"
+              alt="child smiling"
+              width={800}
+              height={600}
+              priority
+            /></div>
         </div>
       </div>
     </section>
