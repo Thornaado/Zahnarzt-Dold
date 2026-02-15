@@ -33,7 +33,7 @@ export default function ImpressumPage() {
               <br />
               Zahnarztpraxis Dold
               <br />
-              Kirchplatz 2
+              Friedrichstr. 23
               <br />
               79618 Rheinfelden
             </p>
@@ -42,9 +42,9 @@ export default function ImpressumPage() {
           <div>
             <h2 className="text-lg font-semibold text-foreground">Kontakt</h2>
             <p className="mt-2">
-              Telefon: +49 (0) 7623 1234
+              Telefon: 07623 62484
               <br />
-              E-Mail: info@zahnarzt-dold.de
+              E-Mail: praxis@zahnarzt-dold.de
             </p>
           </div>
 

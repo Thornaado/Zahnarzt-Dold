@@ -34,13 +34,13 @@ export default function DatenschutzPage() {
               <br />
               Dr. med. dent. Christian Dold
               <br />
-              Kirchplatz 2
+              Friedrichstr. 23
               <br />
               79618 Rheinfelden
               <br />
-              E-Mail: info@zahnarzt-dold.de
+              E-Mail: praxis@zahnarzt-dold.de
               <br />
-              Telefon: +49 (0) 7623 1234
+              Telefon: 07623 62484
             </p>
           </div>
 
