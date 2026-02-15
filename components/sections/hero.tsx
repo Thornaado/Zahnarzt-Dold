@@ -47,9 +47,9 @@ export function Hero() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="rounded-lg border-accent text-accent hover:bg-accent/5 text-base font-semibold"
+                    className="rounded-lg border-accent text-accent hover:bg-accent/5 hover:text-accent text-base font-semibold"
                   >
-                    Neu hier? Ihr erster Besuch
+                    Ihr erster Besuch? Hier klicken
                   </Button>
                 }
               />

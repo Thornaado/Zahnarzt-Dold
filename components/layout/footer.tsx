@@ -30,9 +30,9 @@ export function Footer() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-fit border-primary-foreground/20 bg-transparent text-primary-foreground hover:bg-primary-foreground/5 text-base"
+                  className="w-fit border-accent text-accent hover:bg-accent/5 hover:text-accent text-base font-semibold"
                 >
-                  Neu hier? Ihr erster Besuch
+                  Ihr erster Besuch? Hier klicken
                 </Button>
               }
             />
