@@ -32,8 +32,8 @@ export function Header() {
   return (
     <header
       className={`sticky top-0 z-50 flex h-16 items-center transition-all duration-300 ease-out ${scrolled
-          ? "border-b border-border bg-background/95 backdrop-blur-md"
-          : "bg-transparent"
+        ? "border-b border-border bg-background/95 backdrop-blur-md"
+        : "bg-transparent"
         }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 lg:px-8">
@@ -49,9 +49,10 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
+              className="group relative text-lg font-bold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
             >
               {link.label}
+              <span className="absolute bottom-0 left-2 h-[2px] w-0 bg-accent transition-all duration-300 ease-in-out group-hover:w-[calc(100%-16px)]" />
             </a>
           ))}
           <Button
