@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/layout/mobile-nav"
 
 const navLinks = [
+  { label: "Philosophie", href: "#philosophie" },
   { label: "Leistungen", href: "#leistungen" },
   { label: "FAQ", href: "#faq" },
   { label: "Kontakt", href: "#kontakt" },
@@ -30,11 +31,10 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 flex h-16 items-center transition-all duration-300 ease-out ${
-        scrolled
+      className={`sticky top-0 z-50 flex h-16 items-center transition-all duration-300 ease-out ${scrolled
           ? "border-b border-border bg-background/95 backdrop-blur-md"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 lg:px-8">
         <Link

@@ -33,11 +33,10 @@ export function Services() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div
           ref={ref}
-          className={`mb-12 text-center transition-all duration-500 ease-out ${
-            isVisible
-              ? "translate-y-0 opacity-100"
-              : "translate-y-5 opacity-0"
-          }`}
+          className={`mb-12 text-center transition-all duration-500 ease-out ${isVisible
+            ? "translate-y-0 opacity-100"
+            : "translate-y-5 opacity-0"
+            }`}
         >
           <h2 className="text-2xl font-semibold leading-tight text-foreground lg:text-3xl text-balance">
             Unsere Leistungen

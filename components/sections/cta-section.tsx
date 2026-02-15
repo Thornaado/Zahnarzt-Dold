@@ -16,11 +16,10 @@ export function CTASection() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div
           ref={ref}
-          className={`flex flex-col items-center gap-6 text-center transition-all duration-600 ease-out ${
-            isVisible
-              ? "translate-y-0 opacity-100"
-              : "translate-y-8 opacity-0"
-          }`}
+          className={`flex flex-col items-center gap-6 text-center transition-all duration-600 ease-out ${isVisible
+            ? "translate-y-0 opacity-100"
+            : "translate-y-8 opacity-0"
+            }`}
         >
           <h2 className="text-2xl font-semibold leading-tight text-primary-foreground lg:text-3xl text-balance">
             {"Bereit f\u00FCr Ihr gesundes L\u00E4cheln?"}

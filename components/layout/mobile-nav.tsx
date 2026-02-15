@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
+  { label: "Philosophie", href: "#philosophie" },
   { label: "Leistungen", href: "#leistungen" },
   { label: "FAQ", href: "#faq" },
   { label: "Kontakt", href: "#kontakt" },

@@ -38,11 +38,10 @@ export function FAQ() {
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div
           ref={headingRef}
-          className={`mb-12 text-center transition-all duration-500 ease-out ${
-            headingVisible
-              ? "translate-y-0 opacity-100"
-              : "translate-y-5 opacity-0"
-          }`}
+          className={`mb-12 text-center transition-all duration-500 ease-out ${headingVisible
+            ? "translate-y-0 opacity-100"
+            : "translate-y-5 opacity-0"
+            }`}
         >
           <h2 className="text-2xl font-semibold leading-tight text-foreground lg:text-3xl text-balance">
             {"H\u00E4ufig gestellte Fragen"}
@@ -54,9 +53,8 @@ export function FAQ() {
 
         <div
           ref={contentRef}
-          className={`mx-auto max-w-3xl transition-all duration-500 ease-out delay-100 ${
-            contentVisible ? "opacity-100" : "opacity-0"
-          }`}
+          className={`mx-auto max-w-3xl transition-all duration-500 ease-out delay-100 ${contentVisible ? "opacity-100" : "opacity-0"
+            }`}
         >
           <Accordion type="single" collapsible className="flex flex-col gap-4">
             {faqItems.map((item) => (
