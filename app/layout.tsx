@@ -5,6 +5,7 @@ import { Toaster } from "sonner"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { BackToTop } from "@/components/layout/back-to-top"
+import { ScrollToTopOnMount } from "@/components/layout/scroll-to-top-on-mount"
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema"
 
 import "./globals.css"
@@ -50,6 +51,7 @@ export default function RootLayout({
   return (
     <html lang="de" className={geistSans.variable}>
       <body className="font-sans antialiased">
+        <ScrollToTopOnMount />
         <LocalBusinessSchema />
         <a
           href="#main-content"
