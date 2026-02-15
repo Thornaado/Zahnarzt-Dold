@@ -16,8 +16,8 @@ const navLinks = [
   { label: "Philosophie", href: "/#philosophie" },
   { label: "Leistungen", href: "/#leistungen" },
   { label: "FAQ", href: "/#faq" },
-  { label: "Zeiten", href: "/#zeiten" },
   { label: "Anfahrt", href: "/#anfahrt" },
+  { label: "Zeiten", href: "/#zeiten" },
   { label: "Kontakt", href: "/#kontakt" },
 ]
 
