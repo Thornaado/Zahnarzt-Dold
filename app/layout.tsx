@@ -15,6 +15,7 @@ const geistSans = Geist({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://zahnarzt-dold.vercel.app'),
   title: "Zahnarzt Dold Rheinfelden | Ihre Praxis für nachhaltige Zahnheilkunde",
   description:
     "Moderne Zahnarztpraxis in Rheinfelden (Baden). Wir setzen auf Zahnerhalt, Prophylaxe und eine persönliche Behandlung. Jetzt Termin vereinbaren: 07623 62484.",
