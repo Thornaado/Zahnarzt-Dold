@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { Menu, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -12,23 +13,15 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
-  { label: "Philosophie", href: "#philosophie" },
-  { label: "Leistungen", href: "#leistungen" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Anfahrt", href: "#anfahrt" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Philosophie", href: "/#philosophie" },
+  { label: "Leistungen", href: "/#leistungen" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Anfahrt", href: "/#anfahrt" },
+  { label: "Kontakt", href: "/#kontakt" },
 ]
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
-
-  const handleNavClick = (href: string) => {
-    setOpen(false)
-    setTimeout(() => {
-      const target = document.querySelector(href)
-      target?.scrollIntoView({ behavior: "smooth" })
-    }, 300)
-  }
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -50,14 +43,15 @@ export function MobileNav() {
         </SheetHeader>
         <nav className="flex flex-col gap-6 mt-8">
           {navLinks.map((link) => (
-            <button
+            <Link
               key={link.href}
-              type="button"
-              onClick={() => handleNavClick(link.href)}
+              href={link.href}
+              scroll={true}
+              onClick={() => setOpen(false)}
               className="text-base font-medium text-foreground text-left transition-colors hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
             >
               {link.label}
-            </button>
+            </Link>
           ))}
           <Button
             asChild

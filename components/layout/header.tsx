@@ -7,11 +7,11 @@ import { Button } from "@/components/ui/button"
 import { MobileNav } from "@/components/layout/mobile-nav"
 
 const navLinks = [
-  { label: "Philosophie", href: "#philosophie" },
-  { label: "Leistungen", href: "#leistungen" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Anfahrt", href: "#anfahrt" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Philosophie", href: "/#philosophie" },
+  { label: "Leistungen", href: "/#leistungen" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Anfahrt", href: "/#anfahrt" },
+  { label: "Kontakt", href: "/#kontakt" },
 ]
 
 export function Header() {
@@ -43,14 +43,15 @@ export function Header() {
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
+              scroll={true}
               className="group relative text-lg font-bold text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md px-2 py-1"
             >
               {link.label}
               <span className="absolute bottom-0 left-2 h-[2px] w-0 bg-accent transition-all duration-300 ease-in-out group-hover:w-[calc(100%-16px)]" />
-            </a>
+            </Link>
           ))}
           <Button
             asChild
