@@ -30,7 +30,7 @@ export function CTASection() {
           <Button
             onClick={handleCTA}
             size="lg"
-            className="mt-4 rounded-lg bg-background text-foreground hover:bg-background/90 text-sm font-semibold"
+            className="mt-4 rounded-lg bg-background text-foreground hover:bg-background/90 font-semibold"
           >
             Termin online buchen
           </Button>

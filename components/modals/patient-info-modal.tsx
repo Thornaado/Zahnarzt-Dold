@@ -40,7 +40,7 @@ export function PatientInfoModal({ trigger }: PatientInfoModalProps) {
             ) : (
                 <button
                     onClick={toggleModal}
-                    className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition-all hover:bg-secondary/80 hover:shadow-md"
+                    className="inline-flex items-center justify-center rounded-lg bg-secondary px-6 py-3 text-base font-semibold text-secondary-foreground transition-all hover:bg-secondary/80 hover:shadow-md"
                 >
                     Neu hier? Ihr erster Besuch
                 </button>
@@ -150,7 +150,7 @@ export function PatientInfoModal({ trigger }: PatientInfoModalProps) {
                             <div className="border-t border-border bg-muted/30 px-6 py-4 flex justify-end">
                                 <button
                                     onClick={toggleModal}
-                                    className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90"
+                                    className="rounded-lg bg-primary px-4 py-2 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90"
                                 >
                                     Verstanden
                                 </button>

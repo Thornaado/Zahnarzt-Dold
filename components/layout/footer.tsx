@@ -30,7 +30,7 @@ export function Footer() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-fit border-primary-foreground/20 bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+                  className="w-fit border-primary-foreground/20 bg-transparent text-primary-foreground hover:bg-primary-foreground/5 text-base"
                 >
                   Neu hier? Ihr erster Besuch
                 </Button>

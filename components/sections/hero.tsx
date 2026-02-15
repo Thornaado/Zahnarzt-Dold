@@ -38,7 +38,7 @@ export function Hero() {
               <Button
                 onClick={handleCTA}
                 size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg text-sm font-semibold"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-lg font-semibold"
               >
                 {"Jetzt Termin w\u00E4hlen"}
               </Button>
@@ -47,7 +47,7 @@ export function Hero() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="rounded-lg border-accent text-accent hover:bg-accent/10 text-sm font-semibold"
+                    className="rounded-lg border-accent text-accent hover:bg-accent/5 text-base font-semibold"
                   >
                     Neu hier? Ihr erster Besuch
                   </Button>
