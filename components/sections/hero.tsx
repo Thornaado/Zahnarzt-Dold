@@ -11,13 +11,13 @@ export function Hero() {
   const { ref: imageRef, isVisible: imageVisible } = useAnimateIn({ threshold: 0.2 })
 
   return (
-    <section className="bg-background py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
+    <section className="bg-background py-8 lg:py-24 min-h-[90svh] flex items-center">
+      <div className="mx-auto max-w-7xl px-4 lg:px-8 w-full">
+        <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
           <div
             ref={textRef}
-            className={`flex flex-col gap-6 transition-all duration-700 ease-out ${textVisible
+            className={`flex flex-col gap-4 lg:gap-6 transition-all duration-700 ease-out ${textVisible
               ? "translate-y-0 opacity-100"
               : "translate-y-6 opacity-0"
               }`}
@@ -26,11 +26,11 @@ export function Hero() {
               {"Moderne Zahnmedizin in Rheinfelden. Pr\u00E4zision, der Sie vertrauen."}
             </h1>
 
-            <p className="text-base leading-relaxed text-muted-foreground lg:text-lg">
+            <p className="text-sm leading-relaxed text-muted-foreground lg:text-lg">
               {"Spezialisierte Fachkompetenz in Endodontie und Parodontologie. Wir kombinieren modernste Technik mit einf\u00FChlsamer Behandlung."}
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 lg:gap-4">
               <Button
                 asChild
                 size="lg"
@@ -58,7 +58,7 @@ export function Hero() {
           {/* Hero image */}
           <div
             ref={imageRef}
-            className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 ${imageVisible
+            className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 -mt-4 lg:mt-0 ${imageVisible
               ? "scale-100 opacity-100"
               : "scale-95 opacity-0"
               }`}
