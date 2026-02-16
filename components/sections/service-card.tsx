@@ -21,11 +21,10 @@ export function ServiceCard({
   return (
     <div
       ref={ref}
-      className={`flex flex-col gap-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all duration-500 ease-out hover:scale-[1.02] hover:shadow-lg ${
-        isVisible
-          ? "translate-y-0 opacity-100"
-          : "translate-y-8 opacity-0"
-      }`}
+      className={`flex flex-col items-center text-center gap-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all duration-500 ease-out hover:scale-[1.02] hover:shadow-lg ${isVisible
+        ? "translate-y-0 opacity-100"
+        : "translate-y-8 opacity-0"
+        }`}
       style={{ transitionDelay: isVisible ? `${index * 100}ms` : "0ms" }}
     >
       <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">

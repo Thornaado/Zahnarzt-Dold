@@ -37,14 +37,15 @@ export function Directions() {
                     </motion.div>
 
                     {/* Right Column: Directions Text */}
-                    <div className="flex flex-col gap-10">
+                    <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-10">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
+                            className="flex flex-col items-center lg:items-start"
                         >
-                            <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl">
+                            <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl text-balance">
                                 Ihre Anfahrt zu uns
                             </h2>
                             <p className="mt-4 text-lg text-muted-foreground">
@@ -52,21 +53,21 @@ export function Directions() {
                             </p>
                         </motion.div>
 
-                        <div className="flex flex-col gap-8">
+                        <div className="flex flex-col gap-8 w-full">
                             {/* Section 1: Autobahn */}
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.1 }}
-                                className="flex gap-5"
+                                className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-5"
                             >
                                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                                     <Car className="h-6 w-6" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-semibold text-foreground">Anreise über die Autobahn</h3>
-                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base">
+                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base max-w-lg">
                                         Auf der A98 die Ausfahrt Rheinfelden-Süd (grenznahe Ausfahrt) nehmen. Links abbiegen Richtung Rheinfelden (B34).
                                         Dem Straßenverlauf folgen, direkt nach der Eisenbahnunterführung rechts halten.
                                     </p>
@@ -79,14 +80,14 @@ export function Directions() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
-                                className="flex gap-5"
+                                className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-5"
                             >
                                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                                     <Map className="h-6 w-6" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-semibold text-foreground">Anreise über die Bundesstraße</h3>
-                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base">
+                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base max-w-lg">
                                         Nach der Ampel (Friedrichsplatz) befindet sich die Praxis an der 2. Kreuzung links (Höhe Blumen Kaiser).
                                         Die Praxis liegt direkt an der Ortsdurchfahrt der B34.
                                     </p>
@@ -99,14 +100,14 @@ export function Directions() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.3 }}
-                                className="flex gap-5"
+                                className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-5"
                             >
                                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
                                     <ParkingCircle className="h-6 w-6" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-semibold text-foreground">Kostenlose Parkplätze</h3>
-                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base">
+                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base max-w-lg">
                                         Kostenlose Parkplätze stehen rund um das Gebäude zur Verfügung.
                                     </p>
                                 </div>
@@ -118,6 +119,7 @@ export function Directions() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.4 }}
+                            className="flex justify-center lg:justify-start"
                         >
                             <Button
                                 asChild

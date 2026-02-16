@@ -9,9 +9,9 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Kontakt */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left gap-6">
             <h3 className="text-lg font-semibold text-primary-foreground">Kontakt</h3>
-            <ul className="flex flex-col gap-3 text-sm text-primary-foreground/80">
+            <ul className="flex flex-col items-center md:items-start gap-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
                 <span>Friedrichstr. 23, 79618 Rheinfelden</span>
@@ -39,11 +39,11 @@ export function Footer() {
           </div>
 
           {/* Oeffnungszeiten */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left gap-4">
             <h3 className="text-lg font-semibold text-primary-foreground">
               {"\u00D6ffnungszeiten"}
             </h3>
-            <ul className="flex flex-col gap-3 text-sm text-primary-foreground/80">
+            <ul className="flex flex-col items-center md:items-start gap-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <Clock className="h-4 w-4 shrink-0 mt-0.5" />
                 <div className="flex flex-col">
@@ -55,9 +55,9 @@ export function Footer() {
           </div>
 
           {/* Rechtliches */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left gap-4">
             <h3 className="text-lg font-semibold text-primary-foreground">Rechtliches</h3>
-            <ul className="flex flex-col gap-3 text-sm">
+            <ul className="flex flex-col items-center md:items-start gap-3 text-sm">
               <li>
                 <Link
                   href="/impressum"

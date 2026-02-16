@@ -63,10 +63,10 @@ export function FAQ() {
                 value={item.id}
                 className="rounded-lg border border-border bg-card px-6 data-[state=open]:shadow-sm"
               >
-                <AccordionTrigger className="text-left text-base font-medium text-card-foreground hover:no-underline py-4">
+                <AccordionTrigger className="text-center justify-center text-base font-medium text-card-foreground hover:no-underline py-4">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-sm leading-relaxed text-muted-foreground pb-4">
+                <AccordionContent className="text-center text-sm leading-relaxed text-muted-foreground pb-4">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

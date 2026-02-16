@@ -49,22 +49,23 @@ export function Philosophy() {
                     </motion.div>
 
                     {/* Right Side: Content */}
-                    <div className="flex flex-col gap-8">
+                    <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-8">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
+                            className="flex flex-col items-center lg:items-start"
                         >
-                            <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-4xl">
+                            <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-4xl text-balance">
                                 Nachhaltige Zahnheilkunde mit Herz
                             </h2>
-                            <p className="mt-4 text-muted-foreground leading-relaxed">
+                            <p className="mt-4 text-muted-foreground leading-relaxed max-w-2xl">
                                 Wir kümmern uns primär um Ihre orale Gesundheit, dazu gehören Zähne, Zahnhalteapparat, Kieferknochen, Mundschleimhaut, Speicheldrüsen, Muskulatur und Kiefergelenk.
                             </p>
                         </motion.div>
 
-                        <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-6 w-full">
                             {philosophyItems.map((item, index) => {
                                 const Icon = item.icon
                                 return (
@@ -76,8 +77,8 @@ export function Philosophy() {
                                         transition={{ duration: 0.5, delay: index * 0.2 }}
                                         className="group relative rounded-xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:border-accent/30 hover:shadow-md"
                                     >
-                                        <div className="flex items-start gap-4">
-                                            <div className="mt-1 flex-shrink-0 rounded-lg bg-accent/10 p-2 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
+                                        <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-4">
+                                            <div className="flex-shrink-0 rounded-lg bg-accent/10 p-2 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300">
                                                 <Icon className="h-6 w-6" />
                                             </div>
                                             <div>
