@@ -10,6 +10,7 @@ html {
   html {
     scroll-behavior: auto;
   }
+
   *,
   *::before,
   *::after {
@@ -52,7 +53,7 @@ html {
     --chart-3: 210 17% 97%;
     --chart-4: 210 7% 46%;
     --chart-5: 210 14% 89%;
-    --radius: 0.5rem;
+    --radius: 2rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 210 29% 24%;
@@ -68,9 +69,11 @@ html {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   section[id] {
     scroll-margin-top: 80px;
   }
