@@ -17,7 +17,7 @@ export function Hero() {
           {/* Text content */}
           <div
             ref={textRef}
-            className={`flex flex-col gap-4 lg:gap-6 transition-all duration-700 ease-out ${textVisible
+            className={`flex flex-col items-center text-center lg:items-start lg:text-left gap-2 lg:gap-6 transition-all duration-700 ease-out ${textVisible
               ? "translate-y-0 opacity-100"
               : "translate-y-6 opacity-0"
               }`}
@@ -30,7 +30,7 @@ export function Hero() {
               {"Spezialisierte Fachkompetenz in Endodontie und Parodontologie. Wir kombinieren modernste Technik mit einf\u00FChlsamer Behandlung."}
             </p>
 
-            <div className="flex flex-wrap gap-3 lg:gap-4">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-4">
               <Button
                 asChild
                 size="lg"
@@ -58,7 +58,7 @@ export function Hero() {
           {/* Hero image */}
           <div
             ref={imageRef}
-            className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 -mt-4 lg:mt-0 ${imageVisible
+            className={`relative overflow-hidden rounded-2xl shadow-xl transition-all duration-700 ease-out delay-100 -mt-4 lg:mt-0 aspect-[4/2.85] sm:aspect-auto ${imageVisible
               ? "scale-100 opacity-100"
               : "scale-95 opacity-0"
               }`}
@@ -69,6 +69,7 @@ export function Hero() {
               width={800}
               height={600}
               priority
+              className="w-full h-full object-cover"
             /></div>
         </div>
       </div>
