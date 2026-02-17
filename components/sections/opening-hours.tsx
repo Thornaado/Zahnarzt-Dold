@@ -31,7 +31,7 @@ export function OpeningHours() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="relative flex flex-col items-center gap-2 rounded-2xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:border-accent/30 hover:shadow-md"
                         >
-                            <h3 className="text-xl font-semibold text-foreground">Vormittag</h3>
+                            <h3 className="text-xl font-semibold text-foreground">Vormittags</h3>
                             <p className="text-lg font-medium text-muted-foreground">Mo. bis Fr.</p>
                             <p className="text-2xl font-bold text-accent">8:30 – 11:00 Uhr</p>
                         </motion.div>
@@ -43,7 +43,7 @@ export function OpeningHours() {
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="relative flex flex-col items-center gap-2 rounded-2xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:border-accent/30 hover:shadow-md"
                         >
-                            <h3 className="text-xl font-semibold text-foreground">Nachmittag</h3>
+                            <h3 className="text-xl font-semibold text-foreground">Nachmittags</h3>
                             <p className="text-lg font-medium text-muted-foreground">Mo. bis Do.</p>
                             <p className="text-2xl font-bold text-accent">14:00 – 16:00 Uhr</p>
                         </motion.div>

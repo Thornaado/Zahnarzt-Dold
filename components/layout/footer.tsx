@@ -32,7 +32,7 @@ export function Footer() {
                   size="sm"
                   className="w-fit border-accent text-accent hover:bg-accent/5 hover:text-accent text-base font-semibold"
                 >
-                  Ihr erster Besuch? Hier klicken
+                  Ihr erster Besuch?
                 </Button>
               }
             />
