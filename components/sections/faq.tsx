@@ -43,10 +43,10 @@ export function FAQ() {
             : "translate-y-5 opacity-0"
             }`}
         >
-          <h2 className="text-2xl font-semibold leading-tight text-foreground lg:text-3xl text-balance">
+          <h2 className="text-2xl font-semibold leading-tight text-foreground lg:text-3xl 2xl:text-4xl text-balance">
             {"H\u00E4ufig gestellte Fragen"}
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 text-muted-foreground lg:text-lg 2xl:text-xl">
             Antworten auf die wichtigsten Fragen unserer Patienten
           </p>
         </div>
@@ -63,10 +63,10 @@ export function FAQ() {
                 value={item.id}
                 className="rounded-lg border border-border bg-card px-6 data-[state=open]:shadow-sm"
               >
-                <AccordionTrigger className="text-center justify-center text-base font-medium text-card-foreground hover:no-underline py-4">
+                <AccordionTrigger className="text-center justify-center text-base font-medium text-card-foreground hover:no-underline py-4 2xl:text-lg">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-center text-sm leading-relaxed text-muted-foreground pb-4">
+                <AccordionContent className="text-center text-sm leading-relaxed text-muted-foreground pb-4 lg:text-base 2xl:text-lg">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

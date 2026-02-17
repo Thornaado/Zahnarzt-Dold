@@ -45,10 +45,10 @@ export function Directions() {
                             transition={{ duration: 0.6 }}
                             className="flex flex-col items-center lg:items-start"
                         >
-                            <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl text-balance">
+                            <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl 2xl:text-5xl text-balance">
                                 Ihre Anfahrt zu uns
                             </h2>
-                            <p className="mt-4 text-lg text-muted-foreground">
+                            <p className="mt-4 text-lg text-muted-foreground 2xl:text-xl">
                                 Zentral gelegen in der Friedrichstraße
                             </p>
                         </motion.div>
@@ -66,8 +66,8 @@ export function Directions() {
                                     <Car className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold text-foreground">Anreise über die Autobahn</h3>
-                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base max-w-lg">
+                                    <h3 className="text-lg font-semibold text-foreground 2xl:text-xl">Anreise über die Autobahn</h3>
+                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base 2xl:text-lg max-w-lg">
                                         Auf der A98 die Ausfahrt Rheinfelden-Süd (grenznahe Ausfahrt) nehmen. Links abbiegen Richtung Rheinfelden (B34).
                                         Dem Straßenverlauf folgen, direkt nach der Eisenbahnunterführung rechts halten.
                                     </p>
@@ -86,8 +86,8 @@ export function Directions() {
                                     <Map className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold text-foreground">Anreise über die Bundesstraße</h3>
-                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base max-w-lg">
+                                    <h3 className="text-lg font-semibold text-foreground 2xl:text-xl">Anreise über die Bundesstraße</h3>
+                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base 2xl:text-lg max-w-lg">
                                         Nach der Ampel (Friedrichsplatz) befindet sich die Praxis an der 2. Kreuzung links (Höhe Blumen Kaiser).
                                         Die Praxis liegt direkt an der Ortsdurchfahrt der B34.
                                     </p>
@@ -106,8 +106,8 @@ export function Directions() {
                                     <ParkingCircle className="h-6 w-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-semibold text-foreground">Kostenlose Parkplätze</h3>
-                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base max-w-lg">
+                                    <h3 className="text-lg font-semibold text-foreground 2xl:text-xl">Kostenlose Parkplätze</h3>
+                                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base 2xl:text-lg max-w-lg">
                                         Kostenlose Parkplätze stehen rund um das Gebäude zur Verfügung.
                                     </p>
                                 </div>

@@ -57,10 +57,10 @@ export function Philosophy() {
                             transition={{ duration: 0.6 }}
                             className="flex flex-col items-center lg:items-start"
                         >
-                            <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-4xl text-balance">
+                            <h2 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-4xl 2xl:text-5xl text-balance">
                                 Nachhaltige Zahnheilkunde mit Herz
                             </h2>
-                            <p className="mt-4 text-muted-foreground leading-relaxed max-w-2xl">
+                            <p className="mt-4 text-muted-foreground leading-relaxed max-w-2xl lg:text-lg 2xl:text-xl">
                                 Wir kümmern uns primär um Ihre orale Gesundheit, dazu gehören Zähne, Zahnhalteapparat, Kieferknochen, Mundschleimhaut, Speicheldrüsen, Muskulatur und Kiefergelenk.
                             </p>
                         </motion.div>
@@ -82,10 +82,10 @@ export function Philosophy() {
                                                 <Icon className="h-6 w-6" />
                                             </div>
                                             <div>
-                                                <h3 className="text-xl font-semibold text-foreground">
+                                                <h3 className="text-xl font-semibold text-foreground 2xl:text-2xl">
                                                     {item.title}
                                                 </h3>
-                                                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                                                <p className="mt-2 text-sm leading-relaxed text-muted-foreground lg:text-base 2xl:text-lg">
                                                     {item.content}
                                                 </p>
                                             </div>

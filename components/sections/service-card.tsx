@@ -30,10 +30,10 @@ export function ServiceCard({
       <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
         <Icon className="h-6 w-6 text-accent" />
       </div>
-      <h3 className="text-lg font-semibold leading-tight text-card-foreground lg:text-xl">
+      <h3 className="text-lg font-semibold leading-tight text-card-foreground lg:text-xl 2xl:text-2xl">
         {title}
       </h3>
-      <p className="text-sm leading-relaxed text-muted-foreground lg:text-base">
+      <p className="text-sm leading-relaxed text-muted-foreground lg:text-base 2xl:text-lg">
         {description}
       </p>
     </div>

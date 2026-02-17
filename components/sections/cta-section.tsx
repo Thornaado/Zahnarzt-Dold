@@ -17,10 +17,10 @@ export function CTASection() {
             : "translate-y-8 opacity-0"
             }`}
         >
-          <h2 className="text-2xl font-semibold leading-tight text-primary-foreground lg:text-3xl text-balance">
+          <h2 className="text-2xl font-semibold leading-tight text-primary-foreground lg:text-3xl 2xl:text-4xl text-balance">
             {"Bereit f\u00FCr Ihr gesundes L\u00E4cheln?"}
           </h2>
-          <p className="max-w-xl text-primary-foreground/80">
+          <p className="max-w-xl text-primary-foreground/80 lg:text-lg 2xl:text-xl">
             {"W\u00E4hlen Sie jetzt Ihren Wunschtermin bequem online aus."}
           </p>
           <Button

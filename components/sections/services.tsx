@@ -38,10 +38,10 @@ export function Services() {
             : "translate-y-5 opacity-0"
             }`}
         >
-          <h2 className="text-2xl font-semibold leading-tight text-foreground lg:text-3xl text-balance">
+          <h2 className="text-2xl font-semibold leading-tight text-foreground lg:text-3xl 2xl:text-4xl text-balance">
             Unsere Leistungen
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 text-muted-foreground lg:text-lg 2xl:text-xl">
             {"Spezialisierte Zahnmedizin auf h\u00F6chstem Niveau"}
           </p>
         </div>

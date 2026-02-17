@@ -22,11 +22,11 @@ export function Hero() {
               : "translate-y-6 opacity-0"
               }`}
           >
-            <h1 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl text-balance">
+            <h1 className="text-3xl font-bold leading-tight tracking-tight text-foreground lg:text-5xl 2xl:text-6xl text-balance">
               {"Moderne Zahnmedizin in Rheinfelden. Pr\u00E4zision, der Sie vertrauen."}
             </h1>
 
-            <p className="text-sm leading-relaxed text-muted-foreground lg:text-lg">
+            <p className="text-sm leading-relaxed text-muted-foreground lg:text-lg 2xl:text-xl">
               {"Spezialisierte Fachkompetenz in Endodontie und Parodontologie. Wir kombinieren modernste Technik mit einf\u00FChlsamer Behandlung."}
             </p>
 

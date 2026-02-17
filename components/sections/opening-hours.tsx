@@ -18,7 +18,7 @@ export function OpeningHours() {
                         <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-accent/10 text-accent">
                             <Clock className="h-8 w-8" />
                         </div>
-                        <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl">
+                        <h2 className="text-3xl font-bold tracking-tight text-foreground lg:text-4xl 2xl:text-5xl">
                             Öffnungszeiten
                         </h2>
                     </div>
@@ -31,9 +31,9 @@ export function OpeningHours() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className="relative flex flex-col items-center gap-2 rounded-2xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:border-accent/30 hover:shadow-md"
                         >
-                            <h3 className="text-xl font-semibold text-foreground">Vormittags</h3>
-                            <p className="text-lg font-medium text-muted-foreground">Mo. bis Fr.</p>
-                            <p className="text-2xl font-bold text-accent">8:30 – 11:00 Uhr</p>
+                            <h3 className="text-xl font-semibold text-foreground 2xl:text-2xl">Vormittags</h3>
+                            <p className="text-lg font-medium text-muted-foreground 2xl:text-xl">Mo. bis Fr.</p>
+                            <p className="text-2xl font-bold text-accent 2xl:text-3xl">8:30 – 11:00 Uhr</p>
                         </motion.div>
 
                         <motion.div
@@ -43,9 +43,9 @@ export function OpeningHours() {
                             transition={{ duration: 0.5, delay: 0.3 }}
                             className="relative flex flex-col items-center gap-2 rounded-2xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:border-accent/30 hover:shadow-md"
                         >
-                            <h3 className="text-xl font-semibold text-foreground">Nachmittags</h3>
-                            <p className="text-lg font-medium text-muted-foreground">Mo. bis Do.</p>
-                            <p className="text-2xl font-bold text-accent">14:00 – 16:00 Uhr</p>
+                            <h3 className="text-xl font-semibold text-foreground 2xl:text-2xl">Nachmittags</h3>
+                            <p className="text-lg font-medium text-muted-foreground 2xl:text-xl">Mo. bis Do.</p>
+                            <p className="text-2xl font-bold text-accent 2xl:text-3xl">14:00 – 16:00 Uhr</p>
                         </motion.div>
                     </div>
 

@@ -22,13 +22,13 @@ This plan outlines the steps to optimize the website layout for large screens (u
     - [x] Ensure proper spacing/padding (`p-6 lg:p-8`).
 
 ## 3. Typography Scaling (2xl Breakpoints)
-- [ ] **Headings**: Add `2xl:text-` classes to main section headings (`h1`, `h2`) to scale them up on ultra-wide screens.
-    - [ ] Hero Section H1
-    - [ ] Section H2s (Services, Philosophy, FAQ, Directions, Opening Hours, CTA)
-- [ ] **Body Text**: increased font size for intro paragraphs and key content on `2xl` screens.
-    - [ ] Hero description
-    - [ ] Section subtitles
-    - [ ] Service card descriptions
+- [x] **Headings**: Add `2xl:text-` classes to main section headings (`h1`, `h2`) to scale them up on ultra-wide screens.
+    - [x] Hero Section H1
+    - [x] Section H2s (Services, Philosophy, FAQ, Directions, Opening Hours, CTA)
+- [x] **Body Text**: increased font size for intro paragraphs and key content on `2xl` screens.
+    - [x] Hero description
+    - [x] Section subtitles
+    - [x] Service card descriptions
 
 ## 4. Visual Substance (Background Shapes)
 - [ ] **Add Decorative Elements**: Insert subtle SVG background shapes (using brand accent colors/pastels) to provide visual continuity and reduce "empty" distinct white space.
