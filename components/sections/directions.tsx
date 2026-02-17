@@ -13,7 +13,7 @@ export function Directions() {
 
     return (
         <section id="anfahrt" className="bg-background py-16 lg:py-24 overflow-hidden">
-            <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <div className="mx-auto max-w-[1440px] px-4 lg:px-8">
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
                     {/* Left Column: Map */}
                     <motion.div

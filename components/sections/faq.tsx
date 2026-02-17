@@ -35,7 +35,7 @@ export function FAQ() {
 
   return (
     <section id="faq" className="bg-background py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 lg:px-8">
         <div
           ref={headingRef}
           className={`mb-12 text-center transition-all duration-500 ease-out ${headingVisible

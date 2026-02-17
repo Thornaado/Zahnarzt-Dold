@@ -12,7 +12,7 @@ export function Hero() {
 
   return (
     <section className="bg-background py-8 lg:py-24 min-h-[90svh] flex items-center">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8 w-full">
+      <div className="mx-auto max-w-[1440px] px-4 lg:px-8 w-full">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
           <div

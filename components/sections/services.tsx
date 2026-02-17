@@ -30,7 +30,7 @@ export function Services() {
 
   return (
     <section id="leistungen" className="bg-secondary py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 lg:px-8">
         <div
           ref={ref}
           className={`mb-12 text-center transition-all duration-500 ease-out ${isVisible

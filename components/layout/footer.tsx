@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Kontakt */}
           <div className="flex flex-col items-center text-center md:items-start md:text-left gap-6">

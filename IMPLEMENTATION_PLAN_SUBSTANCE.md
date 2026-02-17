@@ -3,15 +3,15 @@
 This plan outlines the steps to optimize the website layout for large screens (up to 2k monitors), reduce different white space, and add visual polish.
 
 ## 1. Global Layout Updates
-- [ ] **Update Container Widths**: Change the standard container width from `max-w-7xl` (1280px) to `max-w-[1440px]` in all major sections to utilize more screen real estate on large monitors.
-    - [ ] `components/sections/hero.tsx`
-    - [ ] `components/sections/philosophy.tsx`
-    - [ ] `components/sections/services.tsx`
-    - [ ] `components/sections/faq.tsx`
-    - [ ] `components/sections/directions.tsx`
-    - [ ] `components/sections/opening-hours.tsx`
-    - [ ] `components/sections/cta-section.tsx`
-    - [ ] `components/layout/footer.tsx` (if applicable)
+- [x] **Update Container Widths**: Change the standard container width from `max-w-7xl` (1280px) to `max-w-[1440px]` in all major sections to utilize more screen real estate on large monitors.
+    - [x] `components/sections/hero.tsx`
+    - [x] `components/sections/philosophy.tsx`
+    - [x] `components/sections/services.tsx`
+    - [x] `components/sections/faq.tsx`
+    - [x] `components/sections/directions.tsx`
+    - [x] `components/sections/opening-hours.tsx`
+    - [x] `components/sections/cta-section.tsx`
+    - [x] `components/layout/footer.tsx` (if applicable)
 
 ## 2. Services Section Transformation
 - [ ] **Grid Layout**: Update `components/sections/services.tsx` to use a 3-column grid on large screens (`lg:grid-cols-3`).

@@ -9,7 +9,7 @@ export function CTASection() {
 
   return (
     <section id="kontakt" className="bg-primary py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8">
+      <div className="mx-auto max-w-[1440px] px-4 lg:px-8">
         <div
           ref={ref}
           className={`flex flex-col items-center gap-6 text-center transition-all duration-600 ease-out ${isVisible
