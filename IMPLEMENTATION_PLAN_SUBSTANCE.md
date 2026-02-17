@@ -14,12 +14,12 @@ This plan outlines the steps to optimize the website layout for large screens (u
     - [x] `components/layout/footer.tsx` (if applicable)
 
 ## 2. Services Section Transformation
-- [ ] **Grid Layout**: Update `components/sections/services.tsx` to use a 3-column grid on large screens (`lg:grid-cols-3`).
-- [ ] **Service Card Styling**: Update `components/sections/service-card.tsx`:
-    - [ ] Add subtle borders (`border-2`, `border-border/50`).
-    - [ ] Implement hover 'lift' effect (`hover:-translate-y-2`).
-    - [ ] enhance shadow on hover (`hover:shadow-2xl`).
-    - [ ] Ensure proper spacing/padding (`p-6 lg:p-8`).
+- [x] **Grid Layout**: Update `components/sections/services.tsx` to use a 3-column grid on large screens (`lg:grid-cols-3`).
+- [x] **Service Card Styling**: Update `components/sections/service-card.tsx`:
+    - [x] Add subtle borders (`border-2`, `border-border/50`).
+    - [x] Implement hover 'lift' effect (`hover:-translate-y-2`).
+    - [x] enhance shadow on hover (`hover:shadow-2xl`).
+    - [x] Ensure proper spacing/padding (`p-6 lg:p-8`).
 
 ## 3. Typography Scaling (2xl Breakpoints)
 - [ ] **Headings**: Add `2xl:text-` classes to main section headings (`h1`, `h2`) to scale them up on ultra-wide screens.

@@ -21,7 +21,7 @@ export function ServiceCard({
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center text-center gap-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all duration-500 ease-out hover:scale-[1.02] hover:shadow-lg ${isVisible
+      className={`flex flex-col items-center text-center gap-4 rounded-xl border-2 border-border/50 bg-card p-6 lg:p-8 shadow-sm transition-all duration-500 ease-out hover:border-accent/30 hover:shadow-2xl hover:-translate-y-2 ${isVisible
         ? "translate-y-0 opacity-100"
         : "translate-y-8 opacity-0"
         }`}
