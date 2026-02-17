@@ -1,5 +1,6 @@
 "use client"
 
+import { BackgroundBlob } from "@/components/ui/background-blob"
 import { motion } from "framer-motion"
 import { Car, Map, ParkingCircle, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -12,10 +13,8 @@ export function Directions() {
     const directionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Friedrichstraße+23+79618+Rheinfelden+(Baden)"
 
     return (
-        <section id="anfahrt" className="bg-background py-16 lg:py-24 overflow-hidden relative">
-            {/* Decorative background shapes */}
-            <div className="absolute top-40 -right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-40 -left-20 w-80 h-80 bg-accent/15 rounded-full blur-3xl pointer-events-none" />
+        <section id="anfahrt" className="bg-background py-16 lg:py-24 relative">
+            <BackgroundBlob position="left" />
 
             <div className="mx-auto max-w-[1440px] px-4 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">

@@ -1,14 +1,13 @@
 "use client"
 
+import { BackgroundBlob } from "@/components/ui/background-blob"
 import { Clock } from "lucide-react"
 import { motion } from "framer-motion"
 
 export function OpeningHours() {
     return (
-        <section id="zeiten" className="bg-secondary/30 py-16 lg:py-24 overflow-hidden relative">
-            {/* Decorative background shapes */}
-            <div className="absolute top-32 -left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute -bottom-32 -right-20 w-80 h-80 bg-accent/15 rounded-full blur-3xl pointer-events-none" />
+        <section id="zeiten" className="bg-secondary/30 py-16 lg:py-24 relative">
+            <BackgroundBlob position="right" />
 
             <div className="mx-auto max-w-[1440px] px-4 lg:px-8 relative z-10">
                 <motion.div

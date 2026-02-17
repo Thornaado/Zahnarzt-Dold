@@ -1,5 +1,6 @@
 "use client"
 
+import { BackgroundBlob } from "@/components/ui/background-blob"
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useAnimateIn } from "@/hooks/use-animate-in"
@@ -8,7 +9,8 @@ export function CTASection() {
   const { ref, isVisible } = useAnimateIn()
 
   return (
-    <section id="kontakt" className="bg-primary py-16 lg:py-24">
+    <section id="kontakt" className="bg-primary py-16 lg:py-24 relative">
+      <BackgroundBlob position="left" />
       <div className="mx-auto max-w-[1440px] px-4 lg:px-8">
         <div
           ref={ref}
