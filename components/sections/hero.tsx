@@ -11,8 +11,12 @@ export function Hero() {
   const { ref: imageRef, isVisible: imageVisible } = useAnimateIn({ threshold: 0.2 })
 
   return (
-    <section className="bg-background py-8 lg:py-24 min-h-[90svh] flex items-center">
-      <div className="mx-auto max-w-[1440px] px-4 lg:px-8 w-full">
+    <section className="bg-background py-8 lg:py-24 min-h-[90svh] flex items-center relative overflow-hidden">
+      {/* Decorative background shapes */}
+      <div className="absolute top-20 -right-16 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 -left-16 w-80 h-80 bg-accent/15 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="mx-auto max-w-[1440px] px-4 lg:px-8 w-full relative z-10">
         <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
           <div

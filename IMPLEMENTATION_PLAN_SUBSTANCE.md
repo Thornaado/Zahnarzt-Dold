@@ -31,13 +31,13 @@ This plan outlines the steps to optimize the website layout for large screens (u
     - [x] Service card descriptions
 
 ## 4. Visual Substance (Background Shapes)
-- [ ] **Add Decorative Elements**: Insert subtle SVG background shapes (using brand accent colors/pastels) to provide visual continuity and reduce "empty" distinct white space.
-    - [ ] **Hero**: Add blur/gradient or shape behind text/image area.
-    - [ ] **Services**: Add decorative background elements.
-    - [ ] **Philosophy**: Add background accents.
-    - [ ] **FAQ**: Add background accents.
-    - [ ] **Directions**: Add background accents.
-    - [ ] **Opening Hours**: Add background accents.
+- [x] **Add Decorative Elements**: Insert subtle SVG background shapes (using brand accent colors/pastels) to provide visual continuity and reduce "empty" distinct white space.
+    - [x] **Hero**: Add blur/gradient or shape behind text/image area.
+    - [x] **Services**: Add decorative background elements.
+    - [x] **Philosophy**: Add background accents.
+    - [x] **FAQ**: Add background accents.
+    - [x] **Directions**: Add background accents.
+    - [x] **Opening Hours**: Add background accents.
 
 ## 5. Review & Polish
 - [ ] Verify proper spacing on standard desktops (1080p).
