@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={geistSans.variable}>
-      <body className="font-sans antialiased overflow-x-hidden">
+      <body className="font-sans antialiased">
         <ScrollToTopOnMount />
         <LocalBusinessSchema />
         <a

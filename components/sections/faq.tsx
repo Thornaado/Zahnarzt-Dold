@@ -1,6 +1,5 @@
 "use client"
 
-import { BackgroundBlob } from "@/components/ui/background-blob"
 import { useAnimateIn } from "@/hooks/use-animate-in"
 import {
   Accordion,
@@ -35,8 +34,10 @@ export function FAQ() {
   const { ref: contentRef, isVisible: contentVisible } = useAnimateIn()
 
   return (
-    <section id="faq" className="bg-background py-16 lg:py-24 relative">
-      <BackgroundBlob position="right" />
+    <section id="faq" className="bg-background py-16 lg:py-24 relative overflow-hidden">
+      {/* Decorative background shapes */}
+      <div className="absolute top-32 -left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-32 -right-20 w-80 h-80 bg-accent/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-[1440px] px-4 lg:px-8 relative z-10">
         <div
