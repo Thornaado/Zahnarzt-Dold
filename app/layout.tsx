@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer"
 import { BackToTop } from "@/components/layout/back-to-top"
 import { ScrollToTopOnMount } from "@/components/layout/scroll-to-top-on-mount"
 import { LocalBusinessSchema } from "@/components/seo/local-business-schema"
+import { MobileActionBar } from "@/components/layout/mobile-action-bar"
 
 import "./globals.css"
 
@@ -50,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={geistSans.variable}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased pb-20 md:pb-0">
         <ScrollToTopOnMount />
         <LocalBusinessSchema />
         <a
@@ -62,6 +63,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <MobileActionBar />
         <BackToTop />
         <Toaster theme="light" position="top-right" richColors />
       </body>

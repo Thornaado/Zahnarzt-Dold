@@ -23,11 +23,10 @@ export function BackToTop() {
     <button
       type="button"
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-all duration-300 ease-out hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
-        visible
+      className={`fixed bottom-[84px] md:bottom-6 left-6 z-[50] flex h-12 w-12 items-center justify-center rounded-full bg-secondary/80 backdrop-blur-md text-foreground shadow-lg border border-border/10 transition-all duration-300 ease-out hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${visible
           ? "translate-y-0 scale-100 opacity-100"
           : "pointer-events-none translate-y-4 scale-75 opacity-0"
-      }`}
+        }`}
       aria-label="Zuruck nach oben"
     >
       <ArrowUp className="h-5 w-5" />
