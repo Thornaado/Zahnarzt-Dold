@@ -39,7 +39,29 @@ export function MobileNav() {
       <SheetContent side="right" className="w-72">
         <SheetHeader>
           <SheetTitle className="text-left font-bold text-foreground">
-            Zahnarzt Dold
+            <svg width="220" height="48" viewBox="0 0 220 48" xmlns="http://www.w3.org/2000/svg" fill="none" className="w-[160px] h-auto">
+              <style>
+                {`
+                  .brand {
+                    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                  }
+                  .primary {
+                    fill: #111827; /* dark modern navy */
+                  }
+                  .accent {
+                    fill: #1f9d84; /* soft medical green */
+                    font-weight: 700;
+                  }
+                `}
+              </style>
+
+              <text x="0" y="30" className="brand primary" fontSize="22">
+                Zahnarzt <tspan className="accent">D</tspan>old
+              </text>
+              <rect x="0" y="36" width="110" height="2" rx="1" fill="#1f9d84" opacity="0.25" />
+            </svg>
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-6 mt-8">

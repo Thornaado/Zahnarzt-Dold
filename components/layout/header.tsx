@@ -37,9 +37,35 @@ export function Header() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 lg:px-8">
         <Link
           href="/"
-          className="text-lg font-bold tracking-tight text-foreground rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+          className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md"
+          aria-label="Zur Startseite"
         >
-          Zahnarzt Dold
+          <svg width="220" height="48" viewBox="0 0 220 48" xmlns="http://www.w3.org/2000/svg" fill="none" className="w-[180px] h-auto lg:w-[220px]">
+            <style>
+              {`
+                .brand {
+                  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                  font-weight: 600;
+                  letter-spacing: 0.5px;
+                }
+                .primary {
+                  fill: #111827; /* dark modern navy */
+                }
+                .accent {
+                  fill: #1f9d84; /* soft medical green */
+                  font-weight: 700;
+                }
+              `}
+            </style>
+
+            {/* Main Brand Name */}
+            <text x="0" y="30" className="brand primary" fontSize="22">
+              Zahnarzt <tspan className="accent">D</tspan>old
+            </text>
+
+            {/* Subtle underline accent */}
+            <rect x="0" y="36" width="110" height="2" rx="1" fill="#1f9d84" opacity="0.25" />
+          </svg>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
