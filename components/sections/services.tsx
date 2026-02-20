@@ -30,9 +30,8 @@ export function Services() {
 
   return (
     <section id="leistungen" className="bg-secondary py-16 lg:py-24 relative overflow-hidden">
-      {/* Decorative background shapes */}
-      <div className="absolute top-40 -left-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-32 -right-20 w-80 h-80 bg-accent/15 rounded-full blur-3xl pointer-events-none" />
+      {/* Decorative background shape */}
+      <div className="absolute top-1/2 -translate-y-1/2 -right-20 w-[300px] h-[300px] bg-accent/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-[1440px] px-4 lg:px-8 relative z-10">
         <div
