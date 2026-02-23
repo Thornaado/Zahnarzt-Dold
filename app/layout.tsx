@@ -64,7 +64,7 @@ export default function RootLayout({
         </a>
         <Header />
         <StickySidebar />
-        <main id="main-content" className="pr-2 md:pr-0 lg:pr-20 2xl:pr-0">{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
         <MobileActionBar />
         <BackToTop />

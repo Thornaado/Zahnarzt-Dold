@@ -32,7 +32,7 @@ export function StickySidebar() {
     }
 
     return (
-        <div className="fixed right-2 md:right-6 top-1/2 z-[60] -translate-y-1/2 w-8 flex flex-col items-center pointer-events-none">
+        <div className="fixed right-0 md:right-4 top-1/2 z-[60] -translate-y-1/2 w-10 flex flex-col items-center pointer-events-none">
             <nav className="flex flex-col gap-6 items-center pointer-events-none">
                 {sections.map((section) => {
                     const isActive = activeSection === section.id
