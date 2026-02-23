@@ -10,6 +10,7 @@ import { LocalBusinessSchema } from "@/components/seo/local-business-schema"
 import { MobileActionBar } from "@/components/layout/mobile-action-bar"
 import { StickySidebar } from "@/components/ui/sticky-sidebar"
 import { cn } from "@/lib/utils"
+import Script from "next/script"
 
 import "./globals.css"
 
@@ -69,6 +70,24 @@ export default function RootLayout({
         <MobileActionBar />
         <BackToTop />
         <Toaster theme="light" position="top-right" richColors />
+        <Script id="voiceflow-widget" strategy="afterInteractive">
+          {`
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '6856f7c4466a50b614777bb4' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    voice: {
+                      url: "https://runtime-api.voiceflow.com"
+                    }
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+          `}
+        </Script>
       </body>
     </html>
   )
