@@ -158,7 +158,7 @@ export function PatientInfoModal({ trigger }: PatientInfoModalProps) {
                         </div>
 
                         {/* Bottom bar */}
-                        <div className="border-t border-border bg-muted/30 px-6 py-4 flex justify-end">
+                        <div className="border-t border-border bg-muted/30 px-6 py-4 flex justify-center">
                             <button
                                 onClick={toggleModal}
                                 className="rounded-lg bg-primary px-4 py-2 text-base font-semibold text-primary-foreground transition-all hover:bg-primary/90"
