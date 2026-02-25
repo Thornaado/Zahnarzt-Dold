@@ -35,24 +35,28 @@ export function MobileActionBar() {
             style={{ pointerEvents: isVisible ? "auto" : "none" }}
             className="fixed bottom-0 left-0 z-[40] w-full md:hidden"
         >
-            <div className="flex bg-background/80 backdrop-blur-lg border-t border-border/50 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] w-full relative">
-                <Link
-                    href="tel:+49762362484"
-                    className="flex-1 flex flex-col items-center justify-center py-3 h-16 hover:bg-accent/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                >
-                    <Phone className="h-5 w-5 text-accent mb-1" />
-                    <span className="text-xs font-medium text-foreground">Anrufen</span>
-                </Link>
-                <div className="h-full w-[1px] bg-border/50 absolute left-1/2 top-0" />
-                <Link
-                    href="https://www.google.com/maps/dir/?api=1&destination=Friedrichstraße+23+79618+Rheinfelden+(Baden)"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex flex-col items-center justify-center py-3 h-16 hover:bg-accent/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                >
-                    <MapPin className="h-5 w-5 text-accent mb-1" />
-                    <span className="text-xs font-medium text-foreground">Anfahrt</span>
-                </Link>
+            <div className="flex bg-background/80 backdrop-blur-lg border-t border-border/50 shadow-[0_-4px_10px_rgba(0,0,0,0.05)] w-full relative h-24">
+                <div className="flex flex-1 relative h-full">
+                    <Link
+                        href="tel:+49762362484"
+                        className="flex-1 flex flex-col items-center justify-center h-full hover:bg-accent/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    >
+                        <Phone className="h-5 w-5 text-accent mb-1" />
+                        <span className="text-xs font-medium text-foreground">Anrufen</span>
+                    </Link>
+                    <div className="h-10 w-[1px] bg-border/50 self-center" />
+                    <Link
+                        href="https://www.google.com/maps/dir/?api=1&destination=Friedrichstraße+23+79618+Rheinfelden+(Baden)"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 flex flex-col items-center justify-center h-full hover:bg-accent/5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    >
+                        <MapPin className="h-5 w-5 text-accent mb-1" />
+                        <span className="text-xs font-medium text-foreground">Anfahrt</span>
+                    </Link>
+                </div>
+                {/* Spacer for Voiceflow chatbot */}
+                <div className="w-24 shrink-0" aria-hidden="true" />
             </div>
         </motion.div>
     )
