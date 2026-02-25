@@ -54,7 +54,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={cn(geistSans.variable, "overflow-x-hidden")}>
-      <body className="font-sans antialiased pb-24 md:pb-0 overflow-x-hidden">
+      <body className="font-sans antialiased pb-20 md:pb-0 overflow-x-hidden">
         <ScrollToTopOnMount />
         <LocalBusinessSchema />
         <a
@@ -83,8 +83,8 @@ export default function RootLayout({
                       url: "https://runtime-api.voiceflow.com"
                     },
                     render: {
-                      offsetX: 20,
-                      offsetY: 20
+                      offsetX: 12,
+                      offsetY: 12
                     }
                   });
                 }
