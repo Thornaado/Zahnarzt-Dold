@@ -67,7 +67,7 @@ export function Hero() {
               }`}
           >
             <Image
-              src="/hero image.png"
+              src="/hero image.webp"
               alt="Zahnarztpraxis Dold Rheinfelden - Moderne Zahnheilkunde für die ganze Familie"
               width={800}
               height={600}
